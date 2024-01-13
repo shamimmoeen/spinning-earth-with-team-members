@@ -16,11 +16,11 @@ Before running the project, ensure the `assetPath` value in index.html is correc
 
 The project consists of the following files and folders:
 
-index.html: The main HTML file containing the globe structure and JavaScript code.
-css/globe-custom.css: Custom CSS styles for the globe and hotspots.
-js/jquery.min.js: jQuery library for DOM manipulation (if required by Globe.js).
-js/globe.custom.js: Custom JavaScript code for globe configuration and interactions.
-textures/: Folder containing textures for the Earth map and hotspots (if applicable).
+* index.html: The main HTML file containing the globe structure and JavaScript code.
+* css/globe-custom.css: Custom CSS styles for the globe and hotspots.
+* js/jquery.min.js: jQuery library for DOM manipulation (if required by Globe.js).
+* js/globe.custom.js: Custom JavaScript code for globe configuration and interactions.
+* textures/: Folder containing textures for the Earth map and hotspots (if applicable).
 
 ## Running the Project
 
