@@ -1,116 +1,161 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Spinning Earth with Team Members</title>
 
-    <link rel="stylesheet" href="css/globe-custom.css">
+    <link rel="stylesheet" href="css/globe-custom.css" />
     <script src="js/jquery.min.js"></script>
     <script src="js/globe.custom.js"></script>
-</head>
+  </head>
 
-<body>
+  <body>
     <h1 class="m_h_heading">Spinning Earth with Team Members</h1>
 
     <div id="m_h_spinning_earth">
-        <div id="globeGl_" class="globeGl"></div>
+      <div id="globeGl_" class="globeGl"></div>
 
-        <div class="hotspot h5g_hidden" data-id="office_a" data-lat="-34.55" data-long="138.36"
-            data-hotspoticon="textures/places/icons_0000.png" data-hotspotalign="MB" data-hotspotclass="place"
-            data-clickexternal="showOffice">Adelaide, Australia</div>
-        <div class="hotspot h5g_hidden" data-id="office_b" data-lat="36.50" data-long="3.0"
-            data-hotspoticon="textures/places/icons_0001.png" data-hotspotalign="MB" data-hotspotclass="place"
-            data-clickexternal="showOffice">Algiers, Algeria</div>
-        <div class="hotspot h5g_hidden" data-id="office_c" data-lat="52.22" data-long="4.53"
-            data-hotspoticon="textures/places/icons_0002.png" data-hotspotalign="MB" data-hotspotclass="place"
-            data-clickexternal="showOffice">Amsterdam, Netherlands
-        </div>
-        <div class="hotspot h5g_hidden" data-id="office_d" data-lat="-25.15" data-long="-57.40"
-            data-hotspoticon="textures/places/icons_0004.png" data-hotspotalign="MB" data-hotspotclass="place"
-            data-clickexternal="showOffice">Asunción, Paraguay</div>
-        <div class="hotspot h5g_hidden" data-id="office_e" data-lat="-36.52" data-long="174.45"
-            data-hotspoticon="textures/places/icons_0006.png" data-hotspotalign="MB" data-hotspotclass="place"
-            data-clickexternal="showOffice">Auckland, New Zealand</div>
-        <div class="hotspot h5g_hidden" data-id="office_f" data-lat="13.45" data-long="100.30"
-            data-hotspoticon="textures/places/icons_0007.png" data-hotspotalign="MB" data-hotspotclass="place"
-            data-clickexternal="showOffice">Bangkok, Thailand</div>
-        <div class="hotspot h5g_hidden" data-id="office_g" data-lat="39.55" data-long="116.25"
-            data-hotspoticon="textures/places/icons_0009.png" data-hotspotalign="MB" data-hotspotclass="place"
-            data-clickexternal="showOffice">Beijing, China</div>
-        <div class="hotspot h5g_hidden" data-id="office_h" data-lat="-1.28" data-long="-48.29"
-            data-hotspoticon="textures/places/icons_0010.png" data-hotspotalign="MB" data-hotspotclass="place"
-            data-clickexternal="showOffice">Belém, Brazil</div>
-        <div class="hotspot h5g_hidden" data-id="office_i" data-lat="52.25" data-long="-1.55"
-            data-hotspoticon="textures/places/icons_0014.png" data-hotspotalign="MB" data-hotspotclass="place"
-            data-clickexternal="showOffice">Birmingham, England</div>
-        <div class="hotspot h5g_hidden" data-id="office_j" data-lat="-33.55" data-long="18.22"
-            data-hotspoticon="textures/places/icons_0003.png" data-hotspotalign="MB" data-hotspotclass="place"
-            data-clickexternal="showOffice">Cape Town, South Africa
-        </div>
-        <div class="hotspot h5g_hidden" data-id="office_k" data-lat="14.40" data-long="-17.28"
-            data-hotspoticon="textures/places/icons_0012.png" data-hotspotalign="MB" data-hotspotclass="place"
-            data-clickexternal="showOffice">Dakar, Senegal</div>
-        <div class="hotspot h5g_hidden" data-id="office_l" data-lat="23.12" data-long="-106.25"
-            data-hotspoticon="textures/places/icons_0011.png" data-hotspotalign="MB" data-hotspotclass="place"
-            data-clickexternal="showOffice">Mazatlán, Mexico</div>
-        <div class="hotspot h5g_hidden" data-id="office_m" data-lat="19.26" data-long="-99.7"
-            data-hotspoticon="textures/places/icons_0008.png" data-hotspotalign="MB" data-hotspotclass="place"
-            data-clickexternal="showOffice">Mexico City, Mexico</div>
-        <div class="hotspot h5g_hidden" data-id="office_n" data-lat="55.45" data-long="37.36"
-            data-hotspoticon="textures/places/icons_0013.png" data-hotspotalign="MB" data-hotspotclass="place"
-            data-clickexternal="showOffice">Moscow, Russia</div>
-        <div class="hotspot h5g_hidden" data-id="office_o" data-lat="-1.25" data-long="36.55"
-            data-hotspoticon="textures/places/icons_0005.png" data-hotspotalign="MB" data-hotspotclass="place"
-            data-clickexternal="showOffice">Nairobi, Kenya</div>
+      <div
+        class="hotspot h5g_hidden"
+        data-id="office_a"
+        data-lat="-34.55"
+        data-long="138.36"
+        data-hotspoticon="textures/members/person-1.png"
+        data-hotspotalign="MB"
+        data-hotspotclass="place"
+        data-clickexternal="showOffice"
+      >
+        Adelaide, Australia
+      </div>
+      <div
+        class="hotspot h5g_hidden"
+        data-id="office_d"
+        data-lat="-25.15"
+        data-long="-57.40"
+        data-hotspoticon="textures/members/person-4.png"
+        data-hotspotalign="MB"
+        data-hotspotclass="place"
+        data-clickexternal="showOffice"
+      >
+        Asunción, Paraguay
+      </div>
+      <div
+        class="hotspot h5g_hidden"
+        data-id="office_e"
+        data-lat="-36.52"
+        data-long="174.45"
+        data-hotspoticon="textures/members/person-5.png"
+        data-hotspotalign="MB"
+        data-hotspotclass="place"
+        data-clickexternal="showOffice"
+      >
+        Auckland, New Zealand
+      </div>
+      <div
+        class="hotspot h5g_hidden"
+        data-id="office_f"
+        data-lat="13.45"
+        data-long="100.30"
+        data-hotspoticon="textures/members/person-6.png"
+        data-hotspotalign="MB"
+        data-hotspotclass="place"
+        data-clickexternal="showOffice"
+      >
+        Bangkok, Thailand
+      </div>
+      <div
+        class="hotspot h5g_hidden"
+        data-id="office_g"
+        data-lat="39.55"
+        data-long="116.25"
+        data-hotspoticon="textures/members/person-7.png"
+        data-hotspotalign="MB"
+        data-hotspotclass="place"
+        data-clickexternal="showOffice"
+      >
+        Beijing, China
+      </div>
+      <div
+        class="hotspot h5g_hidden"
+        data-id="office_i"
+        data-lat="52.25"
+        data-long="-1.55"
+        data-hotspoticon="textures/members/person-9.png"
+        data-hotspotalign="MB"
+        data-hotspotclass="place"
+        data-clickexternal="showOffice"
+      >
+        Birmingham, England
+      </div>
+      <div
+        class="hotspot h5g_hidden"
+        data-id="office_m"
+        data-lat="19.26"
+        data-long="-99.7"
+        data-hotspoticon="textures/members/person-8.png"
+        data-hotspotalign="MB"
+        data-hotspotclass="place"
+        data-clickexternal="showOffice"
+      >
+        Mexico City, Mexico
+      </div>
+      <div
+        class="hotspot h5g_hidden"
+        data-id="office_o"
+        data-lat="-1.25"
+        data-long="36.55"
+        data-hotspoticon="textures/members/person-2.png"
+        data-hotspotalign="MB"
+        data-hotspotclass="place"
+        data-clickexternal="showOffice"
+      >
+        Nairobi, Kenya
+      </div>
     </div>
 
     <script>
-        var g = $("div#globeGl_").globe({
-            globeRadius: { val: 150 },
-            globeShine: { val: 10 },
-            globeTexture: { val: "textures/earthmap10k_comp.jpg" },
-            globeBump: { val: "textures/earthbump1k.jpg" },
-            globeMinScale: { val: 0.3 },
-            globeMaxScale: { val: 1.5 },
-            globeSegments: { val: 50 },
-            momentum: { val: 0.07 },
-            ambientIntensity: { val: 2.5 },
-            ambientColor: { val: "#555584" },
-            ambientPosX: { val: -5000 },
-            ambientPosY: { val: -15000 },
-            ambientPosZ: { val: -15000 },
-            headLampIntensity: { val: 1.2 },
-            headLampColor: { val: "#ffffff" },
-            headLampPosX: { val: 500 },
-            headLampPosY: { val: 1000 },
-            headLampPosZ: { val: 0 },
-            // hotSpotIcon: { val: "textures/hotspotIconsOrange/nano_LT.png" },
-            // backPlateTexture:{val:"textures/backPlate.png"},
-            backPlateTexture: { val: "" },
-            // backPlateMargin:{val:100},
-            debugMode: { val: false },
-            popWidth: { val: "80%" },
-            popHeight: { val: "80%" },
-            contentClass: { val: ".hotspot" },
-            hotspotCssOverride: { val: "hotspot_override" },
-            cameraTargetX: { val: 0 },
-            cameraTargetY: { val: 0 },
-            cameraTargetZ: { val: 0 },
-            autoRotateSpeed: { val: 0.002 },
-            autoRotate: { val: true },
-            clickExternal: { val: false },
-            assetPath: { val: "/" },
-            zoomWheelDirection: { val: "downOut" },
-            onlyOrbitOnGlobe: { val: true },
-            allowUserZoom: { val: false },
-        });
+      var g = $("div#globeGl_").globe({
+        globeRadius: { val: 150 },
+        globeShine: { val: 10 },
+        globeTexture: { val: "textures/earthmap10k_comp.jpg" },
+        globeBump: { val: "textures/earthbump1k.jpg" },
+        globeMinScale: { val: 0.3 },
+        globeMaxScale: { val: 1.5 },
+        globeSegments: { val: 50 },
+        momentum: { val: 0.07 },
+        ambientIntensity: { val: 2.5 },
+        ambientColor: { val: "#555584" },
+        ambientPosX: { val: -5000 },
+        ambientPosY: { val: -15000 },
+        ambientPosZ: { val: -15000 },
+        headLampIntensity: { val: 1.2 },
+        headLampColor: { val: "#ffffff" },
+        headLampPosX: { val: 500 },
+        headLampPosY: { val: 1000 },
+        headLampPosZ: { val: 0 },
+        // hotSpotIcon: { val: "textures/hotspotIconsOrange/nano_LT.png" },
+        // backPlateTexture:{val:"textures/backPlate.png"},
+        backPlateTexture: { val: "" },
+        // backPlateMargin:{val:100},
+        debugMode: { val: false },
+        popWidth: { val: "80%" },
+        popHeight: { val: "80%" },
+        contentClass: { val: ".hotspot" },
+        hotspotCssOverride: { val: "hotspot_override" },
+        cameraTargetX: { val: 0 },
+        cameraTargetY: { val: 0 },
+        cameraTargetZ: { val: 0 },
+        autoRotateSpeed: { val: 0.002 },
+        autoRotate: { val: true },
+        clickExternal: { val: false },
+        assetPath: { val: "/" },
+        zoomWheelDirection: { val: "downOut" },
+        onlyOrbitOnGlobe: { val: true },
+        allowUserZoom: { val: false },
+      });
 
-        function showOffice() {
-
-        }
+      function showOffice() {}
     </script>
-</body>
-
+  </body>
 </html>
